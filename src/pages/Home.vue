@@ -30,6 +30,16 @@
 			}
 		} ,
 		mounted (){
+			// your data format : 
+			// {
+			//		code : 0 ,
+			//		data : {
+			//			title : ''
+			//		} ,
+			//		message : ok
+			// }
+			//
+
 			this.$http.post(Conf.BASEURL)
 			.then(({code = void 0 , data = {} , message = "请求失败！"}) => {
 				if(!this.judgeData(code , message)) return ;
