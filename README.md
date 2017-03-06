@@ -12,7 +12,9 @@
 ## Node Ecpress
 
 
-## CopyRight Declare
+## License
+
+(The MIT License)
 
 Copyright (c) 2016-present, Liuding, Inc.
 All rights reserved.
