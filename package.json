@@ -4,16 +4,17 @@
   "description": "vue-demo ",
   "main": "index.js",
   "author": "liuding",
-  "license": "ISC" ,
+  "license": "ISC",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
+    "dev": "webpack-dev-server --inline --hot --host 192.168.1.198 --port 3000 ",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "predeploy": "npm run build",
     "deploy": "surge --project . --domain vue-2-simple-routing-example.surge.sh"
   },
   "dependencies": {
-    "vue": "^2.0.0-beta.1" ,
-    "vue-resource": "^1.2.0"
+    "vue": "^2.0.0-beta.1",
+    "vue-resource": "^1.2.0",
+    "vue-router": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
