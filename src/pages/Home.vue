@@ -40,14 +40,16 @@
 			// }
 			//
 
-			this.$http.post(Conf.BASEURL)
-			.then(({code = void 0 , data = {} , message = "请求失败！"}) => {
-				if(!this.judgeData(code , message)) return ;
-				let {
-					title = ''
-				} = data ;	
-				title === '' ? title : this.title = title ;
-			});
+			//this.$http.post(Conf.BASEURL)
+			//.then(({code = void 0 , data = {} , message = "请求失败！"}) => {
+			//	if(!this.judgeData(code , message)) return ;
+			//	let {
+			//		title = ''
+			//	} = data ;	
+			//	title === '' ? title : this.title = title ;
+			//});
+
+			console.log("hello home");
 		} 
 	}
 </script>

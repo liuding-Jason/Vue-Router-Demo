@@ -12,11 +12,6 @@
 ## Node Ecpress
 
 
-## License
-
-(The MIT License)
-
-Copyright (c) 2016-present, Liuding, Inc.
-All rights reserved.
+## Zhihu
 
 My ZhiHu Home Page ***[柳丁Jason Chen](https://www.zhihu.com/people/liu-ding-jasonchen)*** 
