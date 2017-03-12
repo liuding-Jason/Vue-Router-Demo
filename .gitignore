@@ -1,3 +1,4 @@
 node_modules
 webpack.config.js
 ./src/config.js.dist
+npm-debug.log

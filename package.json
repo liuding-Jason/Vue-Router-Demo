@@ -6,7 +6,7 @@
   "author": "liuding",
   "license": "ISC",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --host 192.168.1.198 --port 3000 ",
+    "dev": "webpack-dev-server --devtool eval --progress --colors",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "predeploy": "npm run build",
     "deploy": "surge --project . --domain vue-2-simple-routing-example.surge.sh"
