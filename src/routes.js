@@ -6,7 +6,15 @@ export default new VueRouter({
   mode: 'history',
   base: __dirname,
   routes: [
-    { path: '/home' , component: Home },
+  	{ path: '/' , redirect: '/home' } ,			// 默认路由
+    { 
+    	path: '/home' , 
+    	component: Home , 
+    	children : [{
+
+    	} , {
+
+    	}] }
     { path: '/list' , component: List }
   ]
 })
