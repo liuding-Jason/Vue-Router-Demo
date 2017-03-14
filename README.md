@@ -13,7 +13,7 @@ used .
 
 ## Vue 
 	
-Vue2.0 upgrade much amazing feature , like more excellent virtual-dom and bidirectional 
+Vue2.0 upgrades much amazing feature , like more excellent virtual-dom and bidirectional 
 data transmission and so on .  
 
 ## Vue-Router
@@ -50,7 +50,7 @@ handle with ***state*** .
 	npm run dev
 
 
-	
+
 # Zhihu
 
 My ZhiHu Home Page ***[柳丁Jason Chen](https://www.zhihu.com/people/liu-ding-jasonchen)*** 
