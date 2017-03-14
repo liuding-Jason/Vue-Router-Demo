@@ -1,5 +1,6 @@
+
 /*
-* Vuex actions -- applicational actions
+* Vuex mutations -- applicational mutations
 */
 
 import Vue from "vue" ;
@@ -10,11 +11,11 @@ const state = {
 	actions : 0
 } ;
 
-const actions = {
+const mutations = {
 
 }
 
 export default {
 	state ,
-	actions 
+	mutations 
 }

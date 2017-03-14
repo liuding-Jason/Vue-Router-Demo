@@ -11,8 +11,6 @@ const state = {
 	count : 0
 } ;
 
-console.log(types);
-
 const mutations = {
 	[types.ADD_COUNT](state){
 		state.count++ ;
@@ -32,7 +30,13 @@ const getters = {
 const actions = {
 	getCountNum ({ commit }){
 		commit(types.SHOW_COUNT);
-	} 
+	}  ,
+	add ({commit}){
+		commit(types.ADD_COUNT);
+	} ,
+	del ({commit}){
+		commit(types.DELETE_COUNT);
+	}
 } ;
 
 export default {
