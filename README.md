@@ -9,7 +9,7 @@ used .
 
 # Technology stack
 	
-Vue + Vue-Router + Vuex + Karma + ES6 + Webpack
+	Vue + Vue-Router + Vuex + Karma + ES6 + Webpack
 
 ## Vue 
 	
@@ -38,18 +38,19 @@ handle with ***state*** .
 
 ## Node Ecpress
 
+
+
 # Build Guide
+	git clone https://github.com/liuding-Jason/Vue-Router-Demo.git
 
-```bash
-git clone https://github.com/liuding-Jason/Vue-Router-Demo.git
+	cd Vue-Router-Demo
 
-cd Vue-Router-Demo
+	npm install 
 
-npm install 
+	npm run dev
 
-npm run dev
-```
 
+	
 # Zhihu
 
 My ZhiHu Home Page ***[柳丁Jason Chen](https://www.zhihu.com/people/liu-ding-jasonchen)*** 
