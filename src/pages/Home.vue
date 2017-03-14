@@ -1,16 +1,33 @@
 <template>
-	<h1>{{title}}</h1>
+	<div>
+		<h1>{{title}}</h1>
+		<button class="btn" @click="showTotalCount">actions直接使用</button>
+		<button class="btn" @click="getCountNum">mapActions使用</button>
+		<br/>
+		<br/>
+		<button class="btn" @click="addCount">mutation直接使用</button>
+		<button class="btn" @click="ADD_COUNT">mapMutations直接使用</button>
+		<show-count></show-count>
+	</div>
 </template>
 
 <script>
+	import showCount from "../components/showCount.vue" ;
 	import Conf from "../config" ;
 	import VueResource from "vue-resource" ;
+	// 方式一 Vuex action mapActions
+	import {mapActions} from "vuex" ;
+	// 方式二 Vuex mutation mapMutations 
+	import {mapMutations} from "vuex" ;
 
 	export default {
 		data () {
 			return {
 				title : "Hello Vue And Node Demo!" 
 			}
+		} ,
+		components : {
+			showCount
 		} ,
 		methods : {
 			hello (){
@@ -22,7 +39,24 @@
 					return false ;
 				}
 				return true ;
-			}
+			} ,
+			showTotalCount (){
+				// 方式一 Vuex action 直接引用
+				this.$store.dispatch('getCountNum');
+			} ,
+			...mapActions([
+				'getCountNum'
+			]) ,
+			addCount(){
+				// 方式一 Vuex mutation 直接使用
+				this.$store.commit("ADD_COUNT");
+			},
+			...mapMutations([
+				'ADD_COUNT' ,
+				'DELETE_COUNT' ,
+				'SHOW_COUNT'
+			])
+
 		} ,
 		watch : {
 			title : function(val){
@@ -48,8 +82,28 @@
 			//	} = data ;	
 			//	title === '' ? title : this.title = title ;
 			//});
-
+			console.log(this.$store);
 			console.log("hello home");
 		} 
 	}
 </script>
+
+<style scope>
+
+.btn {
+	border : 1px solid #ccc ;
+	background-color : #87CA3D ;
+	color : #fff ;
+	text-align : center ;
+	padding : 5px 10px ;
+	font-weight : 700 ;
+	letter-spacing : 3px;
+	border-radius : 5px;
+}
+
+.btn:active{
+	color : #333 ;
+	border : none ;
+}
+
+</style>

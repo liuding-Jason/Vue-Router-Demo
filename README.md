@@ -6,12 +6,46 @@
 	Express , we use express to build a server fast . And the same time , RESTFUL API Design is 
 	used .
 
-## Vue 
+# Technology stack
+	
+	Vue + Vue-Router + Vuex + Kamara + ES6 + Webpack
 
+## Vue 
+	
+	Vue2.0 upgrade much amazing feature , like more excellent virtual-dom and bidirectional data transmission and so on .  
+
+## Vue-Router
+
+	Vue-Router helps build a SPA quickly . 
+
+## Vuex 
+
+	Vuex is a perfect state manager , your could build applicational state of different components with it . In Vuex , ***mutations*** 、***getters***、***actions*** 、***modules*** would handle with ***state*** . 
+
+### Mutations
+
+### Getters
+
+### Actions
+
+### Modules
+
+## Kamara
 
 ## Node Ecpress
 
+# Build Guide
 
-## Zhihu
+```bash
+	git clone https://github.com/liuding-Jason/Vue-Router-Demo.git
+
+	cd Vue-Router-Demo
+
+	npm install 
+
+	npm run dev
+```
+
+# Zhihu
 
 My ZhiHu Home Page ***[柳丁Jason Chen](https://www.zhihu.com/people/liu-ding-jasonchen)*** 

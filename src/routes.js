@@ -2,7 +2,6 @@
 import Home from "./pages/home.vue" ;
 import List from "./pages/list.vue" ;
 
-
 export default {
   mode: 'history',
   base: __dirname,
