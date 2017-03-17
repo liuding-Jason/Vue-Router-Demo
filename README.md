@@ -6,6 +6,7 @@ framework Ecpress . About Vue , we use vue-router module to build a SPA applicat
 Express , we use express to build a server fast . And the same time , RESTFUL API Design is 
 used .
 
+***
 
 # Technology stack
 	
@@ -38,15 +39,20 @@ handle with ***state*** .
 
 ## Node Ecpress (palnning)
 
+***
 
 # Build Guide
-	git clone https://github.com/liuding-Jason/Vue-Router-Demo.git
+```bash
+git clone https://github.com/liuding-Jason/Vue-Router-Demo.git
 
-	cd Vue-Router-Demo
+cd Vue-Router-Demo
 
-	npm install 
+npm install 
 
-	npm run dev
+npm run dev
+```
+
+***
 
 # Zhihu
 
