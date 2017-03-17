@@ -34,10 +34,9 @@ handle with ***state*** .
 
 ### Modules
 
-## Karma
+## Karma (palnning)
 
-## Node Ecpress
-
+## Node Ecpress (palnning)
 
 
 # Build Guide
@@ -48,8 +47,6 @@ handle with ***state*** .
 	npm install 
 
 	npm run dev
-
-
 
 # Zhihu
 
