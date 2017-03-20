@@ -35,7 +35,7 @@ handle with ***state*** .
 
 ### Modules
 
-## Karma (palnning)
+## Karma 
 
 ## Node Ecpress (palnning)
 
