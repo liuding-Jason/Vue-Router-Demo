@@ -14,18 +14,19 @@ module.exports = function(config) {
         module : {
             loaders : [
                 {
-                    test : /\.js$/ ,
-                    exclude : /(node_modules|bower_components)/ ,
-                    loader : 'babel-loader'
-                } , {
-                    text : /\.vue$/ ,
-                    loader : 'vue-loader'
+                    test: /\.vue$/,
+                    loader: 'vue'
+                },
+                {
+                    test: /\.js$/,
+                    loader: 'babel',
+                    exclude: /node_modules/
                 }
             ]
         } ,
         vue : {
             loaders : {
-                js : 'babel-loader'
+                js : 'babel'
             }
         } ,
         babel : {
