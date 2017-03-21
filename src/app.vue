@@ -10,8 +10,22 @@
 <script>
 
 export default {
-  name: 'app',
+  name : 'app',
+  data(){
+    return {
+      'title' : 'Vue Demo'
+    }
+  } ,
   components: {
+  } ,
+  methods : {
+    init(){
+      console.log("project init") ;
+    } ,
+    add(num1 , num2){
+      return num1 + num2 ;
+    }
+
   }
 }
 </script>
