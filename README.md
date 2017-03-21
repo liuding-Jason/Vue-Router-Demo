@@ -14,8 +14,8 @@ used .
 
 ## Vue 
 	
-Vue2.0 upgrades much amazing feature , like more excellent virtual-dom and bidirectional 
-data transmission and so on .  
+Vue2.0 upgrades much amazing feature , like more excellent virtual-dom 、 bidirectional 
+data transmission between father component and son component and so on .  
 
 ## Vue-Router
 
@@ -37,11 +37,24 @@ handle with ***state*** .
 
 ## Karma 
 
+### Phantom.js
+
+### Run Test
+
+```bash
+karma start
+```
+
+```bash
+karma run
+```
+
 ## Node Ecpress (palnning)
 
 ***
 
 # Build Guide
+
 ```bash
 git clone https://github.com/liuding-Jason/Vue-Router-Demo.git
 
@@ -50,6 +63,7 @@ cd Vue-Router-Demo
 npm install 
 
 npm run dev
+
 ```
 
 ***
