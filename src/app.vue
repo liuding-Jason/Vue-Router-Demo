@@ -8,7 +8,6 @@
 </template>
 
 <script>
-
 export default {
   name : 'app',
   data(){
@@ -25,7 +24,6 @@ export default {
     add(num1 , num2){
       return num1 + num2 ;
     }
-
   }
 }
 </script>
@@ -36,7 +34,6 @@ body{
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
-
 .path-fade-enter-active, .path-fade-leave-active {
       transition: opacity .3s;
   }

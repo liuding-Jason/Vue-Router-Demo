@@ -20,6 +20,7 @@
 	export default {
 		data () {
 			return {
+				title : 'list' , 
 				list : [
 					{
 						name : 'Jack' ,
@@ -73,8 +74,7 @@
 			//});
 
 			this.hello();
-
-
+			this.title = 'newList' ;
 		}
 
 	}
