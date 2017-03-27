@@ -8,24 +8,30 @@
 </template>
 
 <script>
-export default {
-  name : 'app',
-  data(){
-    return {
-      'title' : 'Vue Demo'
-    }
-  } ,
-  components: {
-  } ,
-  methods : {
-    init(){
-      console.log("project init") ;
+
+  import SetDpr from "./util/dpr" ;
+
+  export default {
+    name : 'app',
+    data(){
+      return {
+        'title' : 'Vue Demo'
+      }
     } ,
-    add(num1 , num2){
-      return num1 + num2 ;
+    components: {
+    } ,
+    methods : {
+      init(){
+        console.log("project init") ;
+      } ,
+      add(num1 , num2){
+        return num1 + num2 ;
+      }
+    } ,
+    mounted (){
+      new SetDpr() ;
     }
   }
-}
 </script>
 
 <style>
