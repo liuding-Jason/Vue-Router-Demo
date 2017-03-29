@@ -68,9 +68,9 @@ npm run dev
 
 ***
 
-# Zhihu
+## Zhihu
 
 My ZhiHu Home Page ***[柳丁Jason Chen](https://www.zhihu.com/people/liu-ding-jasonchen)*** 
 
-# Lincense
+## Lincense
 (MIT)
