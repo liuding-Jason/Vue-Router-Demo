@@ -13,7 +13,7 @@ export default {
 };
 
 
-/* 子路有嵌套
+/* 子路由嵌套
 { 
   path: '/home' , 
   component: Home , 
