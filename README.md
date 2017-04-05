@@ -28,10 +28,12 @@ with it . In Vuex , ***mutations*** 、***getters***、***actions*** 、***modul
 handle with ***state*** . 
 
 ### Mutations
-
-### Getters
+***Mutations*** are the synchronous trigger of states in vuex's store . 
 
 ### Actions
+***Actions*** are the async trigger of states in vuex's store .
+
+### Getters
 
 ### Modules
 
