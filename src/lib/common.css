@@ -8,8 +8,10 @@
 
 
 html{
-	font-family: sans-serif, Arial, Helvetica, "宋体";
+    font-family: sans-serif, Arial, Helvetica, "宋体";
 }
+
+
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, fieldset, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -29,6 +31,8 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -53,14 +57,17 @@ body {
     padding: 0;
     color: #222;
     word-wrap: break-word;
-    font-size: 14px;
+    font-size: 2rem;
     font-family: -apple-system;
     font-family: -apple-system,"Helvetica Neue",Roboto,"Segoe UI",sans-serif;
-    line-height: 20px;
     text-rendering: optimizeLegibility;
     -webkit-backface-visibility: hidden;
     -webkit-user-drag: none;
     -ms-content-zooming: none ;
+    max-width: 1242px ;
+    margin: 0 auto ;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -176,27 +183,27 @@ a.act:after {
 
 
 .clearFloat:after{
-	content: "";
-	height: 0;
-	display: block;
-	clear: both;
-	visibility: hidden;
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
 }
 
 .fixAuto{
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .fixAuto:before{
 
-	content: "";
-	width: 0;
+    content: "";
+    width: 0;
 
-	display: block;
-	float: left;
-	
-	/*根据实际需求确定*/
-	/*padding-top: 10%;*/
+    display: block;
+    float: left;
+    
+    根据实际需求确定
+    padding-top: 10%;
 }
 
 .fr{
@@ -206,3 +213,25 @@ a.act:after {
 .fl{
     float: left;
 }
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.align-items {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; 
+}
+
+.just-con-space-bet {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+

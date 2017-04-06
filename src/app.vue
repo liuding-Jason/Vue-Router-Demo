@@ -30,16 +30,14 @@
     } ,
     mounted (){
       console.log("init");
-      new SetDpr() ;
+      new SetDpr().set() ;
     }
   }
 </script>
 
 <style>
 body{
-  background-color: #fbfbfb ;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  
 }
 .path-fade-enter-active, .path-fade-leave-active {
       transition: opacity .3s;
