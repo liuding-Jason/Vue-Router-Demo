@@ -1,14 +1,15 @@
 
 import Home from "./pages/home.vue" ;
 import List from "./pages/list.vue" ;
+import Msite from "./pages/msite/index" ;
 
 export default {
   mode: 'history',
   base: __dirname,
   routes: [
-  	{ path: '/' , redirect: '/home' } ,			// 默认路由
-    { path: '/home' , component: Home } ,
-    { path: '/list' , component: List }
+  	{ path : '/' , redirect : '/home' } ,			// 默认路由
+    { path : '/msite/' , component : Msite } ,
+    { path : }
   ]
 };
 
