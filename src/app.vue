@@ -36,9 +36,6 @@
 </script>
 
 <style>
-body{
-  
-}
 .path-fade-enter-active, .path-fade-leave-active {
       transition: opacity .3s;
   }
