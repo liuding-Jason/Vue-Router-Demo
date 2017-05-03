@@ -36,10 +36,14 @@ handle with ***state*** .
 ### Getters
 
 ### Modules
+***Modules*** are the smaller unit to manage your Vuex states .
+
 
 ## Karma 
 
 ### Phantom.js
+
+
 
 ### Run Test
 
@@ -53,22 +57,25 @@ karma run
 
 ## Node Express 
 
-In my server module , I use a hot node.JS's framework ***[Express](https://github.com/liuding-Jason/express)*** . In this repository , express-router would be used to build the routes , ***ejs*** would be the template engine . To let your client has a access to get datas from this server , you should add your host to whitelist . 
-
-
-***
+In my server module , I use a hot node.JS's framework ***[Express](https://github.com/liuding-Jason/express)*** . In this repository , express-router would be used to build the routes , ***ejs*** would be the template engine . 
 
 # Build Guide
 
+## Client Build
 ```bash
 git clone https://github.com/liuding-Jason/Vue-Router-Demo.git
-
-cd Vue-Router-Demo
-
-npm install 
-
+cd Vue-Router-Demo && npm install 
 npm run dev
+```
 
+## Server Build
+To let your client has a access to getting datas from this server , you should add your host to whitelist . To parse your params in a ***POST*** request , ***body-parser*** would be used . 
+
+	Note : To test 
+
+```bash
+cd ./server && npm install 
+node index.js
 ```
 
 ***
