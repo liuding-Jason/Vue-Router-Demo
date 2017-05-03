@@ -72,7 +72,7 @@ To let your client has a access to getting datas from this server , you should a
 	Note : To test 
 
 ```bash
-`cd` ./server && `node` index.js
+cd ./server && node index.js
 ```
 
 ***
