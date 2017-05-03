@@ -51,7 +51,10 @@ karma start
 karma run
 ```
 
-## Node Ecpress (palnning)
+## Node Express 
+
+In my server module , I use a hot node.JS's framework ***[Express](https://github.com/liuding-Jason/express)*** . In this repository , express-router would be used to build the routes , ***ejs*** would be the template engine . To let your client has a access to get datas from this server , you should add your host to whitelist . 
+
 
 ***
 
