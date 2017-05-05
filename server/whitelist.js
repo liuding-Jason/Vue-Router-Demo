@@ -3,5 +3,5 @@
 * Cross client hosts List 
 */
 module.exports = Whitelist = [
-	"localhost:3000"
+	"192.168.1.238:3000"
 ] ;
