@@ -64,26 +64,19 @@
 			}
 		} ,
 		mounted (){
-			// your data format : 
-			// {
-			//		code : 0 ,
-			//		data : {
-			//			title : ''
-			//		} ,
-			//		message : ok
-			// }
-			//
-
-			//this.$http.post(Conf.BASEURL)
-			//.then(({code = void 0 , data = {} , message = "请求失败！"}) => {
-			//	if(!this.judgeData(code , message)) return ;
-			//	let {
-			//		title = ''
-			//	} = data ;	
-			//	title === '' ? title : this.title = title ;
-			//});
-			console.log(this.$store);
-			console.log("hello home");
+			this.$http.post(Conf.BASEURL , {})
+			.then(({status = 200 , statusText = "ok" , data = {}}) => {
+				if(status * 1 === 200 && statusText.toUpperCase() === "OK"){
+					return data
+				}
+			})
+			.then(({code = void 0 , data = {} , message = "请求失败！"}) => {
+				if(!this.judgeData(code , message)) return ;
+				let {
+					name = ""
+				} = data ;
+				this.title = name ;
+			});
 		} 
 	}
 </script>

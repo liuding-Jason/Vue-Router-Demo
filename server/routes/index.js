@@ -29,7 +29,7 @@ router.get("/" , function(req , res){
 // post
 router.post("/" , function(req , res){
 	res.status(200) ;
-	res.send(success({name : 'Jack'}));
+	res.send(success({name : 'Vue2.0'}));
 });
 
 
