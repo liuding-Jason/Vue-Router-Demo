@@ -45,7 +45,7 @@
 
 		methods : {
 			hello : function(){
-				console.log("hello list!");
+				//console.log("hello list!");
 			} ,
 			judgeData : function(code = void 0 , message = ""){
 				if(code * 1 !== 0){
@@ -58,7 +58,7 @@
 
 		watch : {
 			list : function(val){
-				console.log("list value is changed!");
+				//console.log("list value is changed!");
 			}
 		} ,
 

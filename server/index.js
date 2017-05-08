@@ -16,6 +16,16 @@ app.all('*', function(req, res, next) {
 });
 
 // TODO 需要增加跨域白名单中间件
+app.use(function(req , res , next){
+	let ori = req.headers.origin.split("://")[1] ;
+	if(whitelist.indexOf(ori) >= 0){
+		next() ;
+	}else{
+		res.status(302);
+		res.send("Sorry!No Access");
+	}
+
+});
 
 
 // 解析参数 - config2
