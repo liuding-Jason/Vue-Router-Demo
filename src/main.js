@@ -7,6 +7,9 @@ import Router from "./routes" ;
 import store from "./store"
 import App  from "./app.vue" ; 
 
+// 引入vue-resource 发送Http请求
+Vue.use(VueResource) ;
+// 引入vue-router 路由模块
 Vue.use(VueRouter);
 
 const app = new Vue({

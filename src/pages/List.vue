@@ -63,20 +63,23 @@
 		} ,
 
 		mounted (){
-
-			//this.$http.post('' , {})
-			//.then(({code = void 0 ,data = {} , message = "请求失败！"}) => {
-			//	if(!this.judgeDate(code , message)) return ;
-			//	let {
-			//		list = []
-			//	} = data ;
-			//	this.list = list ;
-			//});
+			this.$http.post(Conf.BASEURL + '/list' , {})
+			.then(({status = 200 , statusText = "ok" , data = {}}) => {
+				if(status * 1 === 200 && statusText.toUpperCase() === "OK"){
+					return data
+				}
+			})
+			.then(({code = void 0 , data = {} , message = "请求失败！"}) => {
+				if(!this.judgeData(code , message)) return ;
+				let {
+					sutlist = []
+				} = data ;
+				this.list = sutlist ;
+			});
 
 			this.hello();
 			this.title = 'newList' ;
 		}
-
 	}
 </script>
 

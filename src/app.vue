@@ -29,7 +29,7 @@
       }
     } ,
     mounted (){
-      console.log("init");
+      console.log("init") ;
       new SetDpr().set() ;
     }
   }

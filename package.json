@@ -6,7 +6,8 @@
   "author": "liuding",
   "license": "ISC",
   "scripts": {
-    "dev": "set NODE_ENV=develop && webpack-dev-server --devtool eval --progress",
+    "dev": "set NODE_ENV=develop && webpack-dev-server --devtool eval --progress" ,
+    "dev-mac" : "export NODE_ENV=develop && webpack-dev-server --devtool eval --progress " ,
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "predeploy": "npm run build",
     "deploy": "surge --project . --domain vue-2-simple-routing-example.surge.sh"

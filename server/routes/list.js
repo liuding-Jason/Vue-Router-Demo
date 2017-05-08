@@ -27,18 +27,21 @@ router.get("/" , function(req , res){
 router.post("/" , function(req , res){
 	res.status(200) ;
 	res.send(success({
-		datalist : [{
+		sutlist : [{
 			id : 1 ,
 			name : 'Jack' ,
-			age : 15
+			age : 15 , 
+			score : 95
 		} , {
 			id : 2 ,
 			name : 'Tom' ,
-			age : 16 
+			age : 16 ,
+			score : 96
 		} , {
 			id : 3 ,
 			name : 'Bob' ,
-			age : 14
+			age : 14 ,
+			score : 100
 		}]
 	}));
 });
