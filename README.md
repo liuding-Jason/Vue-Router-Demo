@@ -69,7 +69,6 @@ npm run dev
 ## 2.2  Server Build
 To let your client has a access to getting datas from this server , you should add your host to whitelist . To parse your params in a ***POST*** request , ***body-parser*** would be used . 
 
-	Note : To test 
 
 ```bash
 cd ./server && node index.js
