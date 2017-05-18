@@ -8,9 +8,9 @@ used as the HTTP  standard .
 
 ***
 
-# 1. Technology stack
+# 1. Technology stack 
 	
-	Vue + Vue-Router + Vuex + Karma + ES6 + Webpack + Node + Express
+	Vue + Vue-Router + Vuex + Karma + ES6 + Webpack + Node + Express + RESTFUL
 
 ## 1.1 Vue 
 	
